@@ -22,10 +22,6 @@ class OrderData extends Mustache{
             array('title' => 'Avakoks5', 'qty' => 1, 'price' => 100)
         )
     );
-    
-    public function render($template = null, $view = null, $partials = null) {
-        parent::render($template, $view, $partials);
-    }
 }
 
 $word = new PHPWord_TemplateMustache("order.docx", new OrderData());
